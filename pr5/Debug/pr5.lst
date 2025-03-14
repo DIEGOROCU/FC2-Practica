@@ -1,0 +1,2218 @@
+
+pr5.elf:     file format elf32-littleriscv
+pr5.elf
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00000684
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x00000860 memsz 0x00000860 flags r-x
+    LOAD off    0x00002000 vaddr 0x00010000 paddr 0x00010000 align 2**12
+         filesz 0x00000098 memsz 0x000000c0 flags rw-
+
+Sections:
+Idx Name                 Size      VMA       LMA       File off  Algn  Flags
+  0 .text                00000760  00000000  00000000  00001000  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .text.restaNumerador 00000048  00000760  00000760  00001760  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .text.calculaIndice  00000048  000007a8  000007a8  000017a8  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .text.enArray        00000070  000007f0  000007f0  000017f0  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  4 .data                00000098  00010000  00010000  00002000  2**0  CONTENTS, ALLOC, LOAD, DATA
+  5 .bss                 00000028  00010098  00010098  00002098  2**0  ALLOC
+  6 .riscv.attributes    00000021  00000000  00000000  00002098  2**0  CONTENTS, READONLY
+  7 .comment             00000012  00000000  00000000  000020b9  2**0  CONTENTS, READONLY
+  8 .debug_line          00000cf5  00000000  00000000  000020cb  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+  9 .debug_info          000001b6  00000000  00000000  00002dc0  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .debug_abbrev        000000f1  00000000  00000000  00002f76  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 11 .debug_aranges       000000b0  00000000  00000000  00003068  2**3  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 12 .debug_str           0000245e  00000000  00000000  00003118  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 13 .debug_ranges        00000020  00000000  00000000  00005576  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 14 .debug_macro         000006ff  00000000  00000000  00005596  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 15 .debug_frame         0000007c  00000000  00000000  00005c98  2**2  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+00000000 l    d  .text	00000000 .text
+00000760 l    d  .text.restaNumerador	00000000 .text.restaNumerador
+000007a8 l    d  .text.calculaIndice	00000000 .text.calculaIndice
+000007f0 l    d  .text.enArray	00000000 .text.enArray
+00010000 l    d  .data	00000000 .data
+00010098 l    d  .bss	00000000 .bss
+00000000 l    d  .riscv.attributes	00000000 .riscv.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./IntercambiarEcc.o
+0000000c l       .text	00000000 for_recorreCol
+000000d4 l       .text	00000000 fin_for_recorreCol
+00000020 l       .text	00000000 while_col
+00000020 l       .text	00000000 while_noRepetir
+00000050 l       .text	00000000 if_yaEstaba
+00000058 l       .text	00000000 else_if_yaEstaba
+0000005c l       .text	00000000 fin_while_noRepetir
+00000064 l       .text	00000000 if_noPosible
+0000007c l       .text	00000000 else_if_noPosible
+000000b4 l       .text	00000000 if_igualCero
+000000bc l       .text	00000000 else_if_igualCero
+000000d0 l       .text	00000000 fin_while_col
+000000e8 l       .text	00000000 for_ajustaCols
+00000158 l       .text	00000000 fin_for_ajustaCols
+000000f8 l       .text	00000000 if_bienColocada
+00000104 l       .text	00000000 else_bienColocada
+00000190 l       .text	00000000 buscaCol
+00000168 l       .text	00000000 for_intercambiaCols
+0000018c l       .text	00000000 fin_for_intercambiaCols
+00000198 l       .text	00000000 for_buscaCol
+000001b0 l       .text	00000000 fin_for_buscaCol
+00000000 l    df *ABS*	00000000 ./TrianguloInferior.o
+000002f4 l       .text	00000000 fin_mcm
+00000240 l       .text	00000000 for_primeraEccNum
+00000260 l       .text	00000000 fin_for_primeraEccNum
+00000264 l       .text	00000000 for_primeraEccDen
+00000288 l       .text	00000000 fin_for_primeraEccDen
+0000028c l       .text	00000000 for_segundaEccNum
+000002ac l       .text	00000000 fin_for_segundaEccNum
+000002b0 l       .text	00000000 for_segundaEccDen
+000002d4 l       .text	00000000 fin_for_segundaEccDen
+000003b4 l       .text	00000000 simplificaEcc
+0000033c l       .text	00000000 for_resta
+000003a8 l       .text	00000000 fin_for_resta
+000003c0 l       .text	00000000 for_recorreEcc
+00000434 l       .text	00000000 fin_for_recorreEcc
+000003e0 l       .text	00000000 while_simplificaEcc
+00000428 l       .text	00000000 fin_while_simplificaEcc
+000003e4 l       .text	00000000 if_simplificaEcc
+00000414 l       .text	00000000 else_simplificaEcc
+0000041c l       .text	00000000 fin_if_simplificaEcc
+00000000 l    df *ABS*	00000000 ./TrianguloSuperior.o
+00000478 l       .text	00000000 while_triSup
+00000528 l       .text	00000000 fin_while_triSup
+00000594 l       .text	00000000 guardaSol
+000005fc l       .text	00000000 simplificaNum
+00000614 l       .text	00000000 while_simplificaNum
+0000065c l       .text	00000000 fin_while_simplificaNum
+0000061c l       .text	00000000 if_simplificaNum
+0000064c l       .text	00000000 else_simplificaNum
+00000654 l       .text	00000000 fin_if_simplificaNum
+00000680 l       .text	00000000 fin_simplificaNum
+00000000 l    df *ABS*	00000000 ./fun_asm.o
+00000003 l       *ABS*	00000000 N
+00010000 l       .data	00000000 E1n
+00010010 l       .data	00000000 E1d
+00010020 l       .data	00000000 E2n
+00010030 l       .data	00000000 E2d
+00010040 l       .data	00000000 E3n
+00010050 l       .data	00000000 E3d
+00010060 l       .data	00000000 Primos
+00010080 l       .data	00000000 AuxCols
+0001008c l       .data	00000000 IntercambiadorMoncloa
+00010098 l       .bss	00000000 Visualizador
+000100a0 l       .bss	00000000 Sn
+000100b0 l       .bss	00000000 Sd
+000006c8 l       .text	00000000 for_trianguloInf
+00000728 l       .text	00000000 fin_for_trianguloInf
+000006d0 l       .text	00000000 for_trianguloInfCol
+00000720 l       .text	00000000 fin_for_trianguloInfCol
+000006d4 l       .text	00000000 simplificacion
+0000070c l       .text	00000000 fin_simplificacion
+00000738 l       .text	00000000 for_guardamosSoluciones
+00000758 l       .text	00000000 fin_for_guardamosSoluciones
+0000075c l       .text	00000000 fin
+00000000 l    df *ABS*	00000000 fun_c.c
+000000e0 g       .text	00000000 ajustaCols
+00000000 g       .text	00000000 revisaEccCorrectas
+00000760 g     F .text.restaNumerador	00000048 restaNumerador
+000007f0 g     F .text.enArray	00000070 enArray
+00000684 g       .text	00000000 main
+000007a8 g     F .text.calculaIndice	00000048 calculaIndice
+00000304 g       .text	00000000 restarEcc
+00000438 g       .text	00000000 cerosTrianguloSup
+0000015c g       .text	00000000 intercambiaCols
+000001b8 g       .text	00000000 mcm
+00020000 g       *ABS*	00000000 _stack
+
+
+
+Disassembly of section .text:
+
+00000000 <revisaEccCorrectas>:
+revisaEccCorrectas():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:11
+
+revisaEccCorrectas:
+
+    // Void
+
+	addi sp, sp, -4
+   0:	ffc10113          	addi	sp,sp,-4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:12
+	sw ra, 0(sp)
+   4:	00112023          	sw	ra,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:14
+
+	li t0, 0         // i=0
+   8:	00000293          	li	t0,0
+
+0000000c <for_recorreCol>:
+for_recorreCol():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:18
+
+	for_recorreCol:
+
+		bge t0, s1, fin_for_recorreCol   // j si i>=N
+   c:	0c92d463          	bge	t0,s1,d4 <fin_for_recorreCol>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:20
+
+		slli t1, t0, 2
+  10:	00229313          	slli	t1,t0,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:21
+		add t1, t1, s6
+  14:	01630333          	add	t1,t1,s6
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:22
+		lw t1, 0(t1)
+  18:	00032303          	lw	t1,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:23
+		addi t1, t1, 1                   // j empieza con el siguiente numero
+  1c:	00130313          	addi	t1,t1,1
+
+00000020 <while_col>:
+while_col():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:29
+
+		while_col:
+
+			while_noRepetir:
+
+				mv a0, s6
+  20:	000b0513          	mv	a0,s6
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:30
+				mv a1, t1
+  24:	00030593          	mv	a1,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:31
+				mv a2, s1
+  28:	00048613          	mv	a2,s1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:33
+
+				addi sp, sp, -8   // Apilamos, comprobamos y desapilamos
+  2c:	ff810113          	addi	sp,sp,-8
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:34
+				sw t0, 0(sp)
+  30:	00512023          	sw	t0,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:35
+				sw t1, 4(sp)
+  34:	00612223          	sw	t1,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:36
+				call enArray
+  38:	7b8000ef          	jal	ra,7f0 <enArray>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:37
+				lw t0, 0(sp)
+  3c:	00012283          	lw	t0,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:38
+				lw t1, 4(sp)
+  40:	00412303          	lw	t1,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:39
+				addi sp, sp, 8
+  44:	00810113          	addi	sp,sp,8
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:41
+
+				beq a0, zero, if_yaEstaba
+  48:	00050463          	beqz	a0,50 <if_yaEstaba>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:42
+				j else_if_yaEstaba
+  4c:	00c0006f          	j	58 <else_if_yaEstaba>
+
+00000050 <if_yaEstaba>:
+if_yaEstaba():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:46
+
+				if_yaEstaba:   // Si ya estaba, pasamos al siguiente numero
+
+				addi t1, t1, 1
+  50:	00130313          	addi	t1,t1,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:47
+				j while_noRepetir
+  54:	fcdff06f          	j	20 <while_col>
+
+00000058 <else_if_yaEstaba>:
+else_if_yaEstaba():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:51
+
+				else_if_yaEstaba:   // Si no estaba, comprobamos si el numero correspondiente es 0
+
+				j fin_while_noRepetir 																																												//Pablo ha estado aqui
+  58:	0040006f          	j	5c <fin_while_noRepetir>
+
+0000005c <fin_while_noRepetir>:
+fin_while_noRepetir():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:55
+
+			fin_while_noRepetir:
+
+				bge t1, s1, if_noPosible    // j si hemos revisado toda la columna
+  5c:	00935463          	bge	t1,s1,64 <if_noPosible>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:56
+				j else_if_noPosible        // j else
+  60:	01c0006f          	j	7c <else_if_noPosible>
+
+00000064 <if_noPosible>:
+if_noPosible():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:60
+
+			if_noPosible:
+
+				li t1, -1
+  64:	fff00313          	li	t1,-1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:62
+
+				slli t2, t0, 2
+  68:	00229393          	slli	t2,t0,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:63
+				add t2, t2, s6
+  6c:	016383b3          	add	t2,t2,s6
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:64
+				sw t1, 0(t2)     // Guardamos un -1 (pasara a 0) en la columna ya revisada
+  70:	0063a023          	sw	t1,0(t2)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:66
+
+				addi t0, t0, -1  // Pasamos a la anterior ecc
+  74:	fff28293          	addi	t0,t0,-1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:68
+
+				j for_recorreCol // Volvemos
+  78:	f95ff06f          	j	c <for_recorreCol>
+
+0000007c <else_if_noPosible>:
+else_if_noPosible():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:72
+
+			else_if_noPosible:   // Sí es posible
+
+				mv a0, t1         // Calculamos el indice del elemento i de la 1 ecc
+  7c:	00030513          	mv	a0,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:73
+				slli a0, a0, 1    // Multiplicamos para contar las ecc. de denominadores
+  80:	00151513          	slli	a0,a0,0x1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:74
+				mv a1, t0
+  84:	00028593          	mv	a1,t0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:76
+
+				addi sp, sp, -8   // Apilamos, calculamos y desapilamos
+  88:	ff810113          	addi	sp,sp,-8
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:77
+				sw t0, 0(sp)
+  8c:	00512023          	sw	t0,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:78
+				sw t1, 4(sp)
+  90:	00612223          	sw	t1,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:79
+				call calculaIndice
+  94:	714000ef          	jal	ra,7a8 <calculaIndice>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:80
+				lw t0, 0(sp)
+  98:	00012283          	lw	t0,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:81
+				lw t1, 4(sp)
+  9c:	00412303          	lw	t1,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:82
+				addi sp, sp, 8
+  a0:	00810113          	addi	sp,sp,8
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:84
+
+				add a0, a0, s2   // @Real del elemento
+  a4:	01250533          	add	a0,a0,s2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:86
+
+				lw t2, 0(a0)
+  a8:	00052383          	lw	t2,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:88
+
+				beq t2, zero, if_igualCero   // Comprobamos si hay un 0
+  ac:	00038463          	beqz	t2,b4 <if_igualCero>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:90
+
+				j else_if_igualCero
+  b0:	00c0006f          	j	bc <else_if_igualCero>
+
+000000b4 <if_igualCero>:
+if_igualCero():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:94
+
+			if_igualCero:        // Sí hay un 0
+
+				addi t1, t1, 1
+  b4:	00130313          	addi	t1,t1,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:95
+				j while_col      // Pasamos al siguiente numero de la columna
+  b8:	f69ff06f          	j	20 <while_col>
+
+000000bc <else_if_igualCero>:
+else_if_igualCero():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:99
+
+			else_if_igualCero:   // No hay un 0
+
+				slli t2, t0, 2
+  bc:	00229393          	slli	t2,t0,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:100
+				add t2, t2, s6
+  c0:	016383b3          	add	t2,t2,s6
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:101
+				sw t1, 0(t2)     // Guardamos la posicion del numero en Aux
+  c4:	0063a023          	sw	t1,0(t2)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:103
+
+				addi t0, t0, 1
+  c8:	00128293          	addi	t0,t0,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:104
+				j for_recorreCol // Pasamos a la siguiente columna
+  cc:	f41ff06f          	j	c <for_recorreCol>
+
+000000d0 <fin_while_col>:
+fin_while_col():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:108
+
+		fin_while_col:
+
+			j while_col
+  d0:	f51ff06f          	j	20 <while_col>
+
+000000d4 <fin_for_recorreCol>:
+fin_for_recorreCol():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:112
+
+	fin_for_recorreCol:
+
+	lw ra, 0(sp)
+  d4:	00012083          	lw	ra,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:113
+	addi sp, sp, 4   // Desapilamos
+  d8:	00410113          	addi	sp,sp,4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:116
+
+
+ret              // Ya terminado
+  dc:	00008067          	ret
+
+000000e0 <ajustaCols>:
+ajustaCols():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:126
+
+ajustaCols:
+
+// Void
+
+li t0, 0   // i=0
+  e0:	00000293          	li	t0,0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:127
+mv t1, s6  // t1=@AuxCols
+  e4:	000b0313          	mv	t1,s6
+
+000000e8 <for_ajustaCols>:
+for_ajustaCols():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:131
+
+for_ajustaCols:
+
+bge t0, s1, fin_for_ajustaCols   // j si i>=N
+  e8:	0692d863          	bge	t0,s1,158 <fin_for_ajustaCols>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:133
+
+lw t2, 0(t1)       // AuxCols[i]
+  ec:	00032383          	lw	t2,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:135
+
+beq t0, t2, if_bienColocada   // j si ya esta bien colocada
+  f0:	00728463          	beq	t0,t2,f8 <if_bienColocada>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:136
+j else_bienColocada           // Else (mal colocada)
+  f4:	0100006f          	j	104 <else_bienColocada>
+
+000000f8 <if_bienColocada>:
+if_bienColocada():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:140
+
+if_bienColocada:
+
+addi t1, t1, 4     // Siguiente @
+  f8:	00430313          	addi	t1,t1,4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:141
+addi t0, t0, 1     // i++
+  fc:	00128293          	addi	t0,t0,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:142
+j for_ajustaCols
+ 100:	fe9ff06f          	j	e8 <for_ajustaCols>
+
+00000104 <else_bienColocada>:
+else_bienColocada():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:146
+
+else_bienColocada:
+
+mv a0, t0          // a0=t0 para buscar su posicion
+ 104:	00028513          	mv	a0,t0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:148
+
+addi sp, sp, -16   // Apilamos
+ 108:	ff010113          	addi	sp,sp,-16
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:149
+sw ra, 0(sp)
+ 10c:	00112023          	sw	ra,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:150
+sw t0, 4(sp)
+ 110:	00512223          	sw	t0,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:151
+sw t1, 8(sp)
+ 114:	00612423          	sw	t1,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:152
+sw t2, 12(sp)
+ 118:	00712623          	sw	t2,12(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:154
+
+call buscaCol      // Buscamos la col
+ 11c:	074000ef          	jal	ra,190 <buscaCol>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:155
+slli a0, a0, 2
+ 120:	00251513          	slli	a0,a0,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:156
+add a0, a0, s2     // @De la col mal colocada
+ 124:	01250533          	add	a0,a0,s2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:158
+
+lw a1, 4(sp)
+ 128:	00412583          	lw	a1,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:159
+slli a1, a1, 2
+ 12c:	00259593          	slli	a1,a1,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:160
+add a1, a1, s2     // @De la col mal colocada
+ 130:	012585b3          	add	a1,a1,s2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:162
+
+call intercambiaCols   // Intercambiamos
+ 134:	028000ef          	jal	ra,15c <intercambiaCols>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:164
+
+lw ra, 0(sp)
+ 138:	00012083          	lw	ra,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:165
+lw t0, 4(sp)
+ 13c:	00412283          	lw	t0,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:166
+lw t1, 8(sp)
+ 140:	00812303          	lw	t1,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:167
+lw t2, 12(sp)
+ 144:	00c12383          	lw	t2,12(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:168
+addi sp, sp, 16    // Desapilamos
+ 148:	01010113          	addi	sp,sp,16
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:170
+
+addi t1, t1, 4     // Siguiente @
+ 14c:	00430313          	addi	t1,t1,4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:171
+addi t0, t0, 1     // i++
+ 150:	00128293          	addi	t0,t0,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:173
+
+j for_ajustaCols
+ 154:	f95ff06f          	j	e8 <for_ajustaCols>
+
+00000158 <fin_for_ajustaCols>:
+fin_for_ajustaCols():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:177
+
+fin_for_ajustaCols:
+
+ret
+ 158:	00008067          	ret
+
+0000015c <intercambiaCols>:
+intercambiaCols():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:187
+
+intercambiaCols:
+
+	// a0 y a1 tienen los @ de las cols. que vamos a intercambiar
+
+	li t0, 0           // i=0
+ 15c:	00000293          	li	t0,0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:188
+	mv t3, s1
+ 160:	00048e13          	mv	t3,s1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:189
+	slli t3, t3, 1     // t3=2*N (para contar num. y den.)
+ 164:	001e1e13          	slli	t3,t3,0x1
+
+00000168 <for_intercambiaCols>:
+for_intercambiaCols():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:193
+
+	for_intercambiaCols:
+
+		bge t0, s1, fin_for_intercambiaCols   // j si i>=2*N
+ 168:	0292d263          	bge	t0,s1,18c <fin_for_intercambiaCols>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:195
+
+		lw t1, 0(a0)
+ 16c:	00052303          	lw	t1,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:196
+		lw t2, 0(a1)                          // Cargamos
+ 170:	0005a383          	lw	t2,0(a1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:197
+		sw t2, 0(a0)
+ 174:	00752023          	sw	t2,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:198
+		sw t1, 0(a1)                          // Guardamos (intercambiando)
+ 178:	0065a023          	sw	t1,0(a1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:199
+		add a0, a0, s4
+ 17c:	01450533          	add	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:200
+		add a1, a1, s4                        // Pasamos a la siguiente fila
+ 180:	014585b3          	add	a1,a1,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:201
+		addi t0, t0, 1                        // i++
+ 184:	00128293          	addi	t0,t0,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:203
+
+		j for_intercambiaCols
+ 188:	fe1ff06f          	j	168 <for_intercambiaCols>
+
+0000018c <fin_for_intercambiaCols>:
+fin_for_intercambiaCols():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:207
+
+	fin_for_intercambiaCols:
+
+ret
+ 18c:	00008067          	ret
+
+00000190 <buscaCol>:
+buscaCol():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:217
+
+buscaCol:
+
+	// a0 tiene la col buscada
+
+	li t0, 0   // i=0
+ 190:	00000293          	li	t0,0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:218
+	mv t1, s6  // t1=@AuxCols
+ 194:	000b0313          	mv	t1,s6
+
+00000198 <for_buscaCol>:
+for_buscaCol():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:222
+
+	for_buscaCol:
+
+		bge t0, s1, fin_for_buscaCol   // j si i>=N
+ 198:	0092dc63          	bge	t0,s1,1b0 <fin_for_buscaCol>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:224
+
+		lw t2, 0(t1)
+ 19c:	00032383          	lw	t2,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:225
+		beq a0, t2, fin_for_buscaCol   // j si AuxCols[i]=a0
+ 1a0:	00750863          	beq	a0,t2,1b0 <fin_for_buscaCol>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:226
+		addi t1, t1, 4                 // Siguiente elemento de AuxCols
+ 1a4:	00430313          	addi	t1,t1,4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:227
+		addi t0, t0, 1                 // i++
+ 1a8:	00128293          	addi	t0,t0,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:229
+
+		j for_buscaCol
+ 1ac:	fedff06f          	j	198 <for_buscaCol>
+
+000001b0 <fin_for_buscaCol>:
+fin_for_buscaCol():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:233
+
+	fin_for_buscaCol:
+
+	mv a0, t0                      // a0=poscion de la col. buscada en AuxCols
+ 1b0:	00028513          	mv	a0,t0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../IntercambiarEcc.asm:235
+
+ret
+ 1b4:	00008067          	ret
+
+000001b8 <mcm>:
+mcm():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:12
+
+mcm:
+
+    // a0 y a1 tienen las ecc.
+
+	addi sp, sp, -12       // Apilamos a0 y a1, y ra
+ 1b8:	ff410113          	addi	sp,sp,-12
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:13
+	sw ra, 8(sp)
+ 1bc:	00112423          	sw	ra,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:14
+	sw a0, 4(sp)
+ 1c0:	00a12223          	sw	a0,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:15
+	sw a1, 0(sp)
+ 1c4:	00b12023          	sw	a1,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:17
+
+	mv a0, a0              // Pasamos el indice de ecc1
+ 1c8:	00050513          	mv	a0,a0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:18
+	mv a1, a0
+ 1cc:	00050593          	mv	a1,a0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:19
+	srli a1, a1, 1
+ 1d0:	0015d593          	srli	a1,a1,0x1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:21
+
+	call calculaIndice
+ 1d4:	5d4000ef          	jal	ra,7a8 <calculaIndice>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:23
+
+	add a0, a0, s2         // Indice real para t2 y t3
+ 1d8:	01250533          	add	a0,a0,s2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:25
+
+	lw t2, 0(a0)           // Con el indice del numerador, lo guardamos en t2 y en t3 el denominador
+ 1dc:	00052383          	lw	t2,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:26
+	add a0, a0, s4
+ 1e0:	01450533          	add	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:27
+	lw t3, 0(a0)
+ 1e4:	00052e03          	lw	t3,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:29
+
+	addi sp, sp, -8        // Apilamos t2 y t3 (num y den del 1 numero)
+ 1e8:	ff810113          	addi	sp,sp,-8
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:30
+	sw t2, 4(sp)
+ 1ec:	00712223          	sw	t2,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:31
+	sw t3, 0(sp)
+ 1f0:	01c12023          	sw	t3,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:33
+
+	lw a0, 8(sp)           // Pasamos el indice de ecc2
+ 1f4:	00812503          	lw	a0,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:34
+	lw a1, 12(sp)
+ 1f8:	00c12583          	lw	a1,12(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:35
+	srli a1, a1, 1
+ 1fc:	0015d593          	srli	a1,a1,0x1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:37
+
+	call calculaIndice
+ 200:	5a8000ef          	jal	ra,7a8 <calculaIndice>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:39
+
+	add a0, a0, s2         // Indice real para t4 y t5
+ 204:	01250533          	add	a0,a0,s2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:41
+
+	lw t4, 0(a0)           // Guardamos el numerador y denominador del 2 numero
+ 208:	00052e83          	lw	t4,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:42
+	add a0, a0, s4
+ 20c:	01450533          	add	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:43
+	lw t5, 0(a0)
+ 210:	00052f03          	lw	t5,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:45
+
+	lw t2, 4(sp)           // Desapilamos todos los valores
+ 214:	00412383          	lw	t2,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:46
+	lw t3, 0(sp)
+ 218:	00012e03          	lw	t3,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:47
+	lw a0, 12(sp)
+ 21c:	00c12503          	lw	a0,12(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:48
+	lw a1, 8(sp)
+ 220:	00812583          	lw	a1,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:49
+	addi sp, sp, 8
+ 224:	00810113          	addi	sp,sp,8
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:51
+
+	beq t4, zero, fin_mcm  // Si ya tenemos un 0, no hacemos nada
+ 228:	0c0e8663          	beqz	t4,2f4 <fin_mcm>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:53
+
+	li t6, 0
+ 22c:	00000f93          	li	t6,0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:55
+
+	mul a0, a0, s4   // Calculamos las direcciones de ambas ecc.
+ 230:	03450533          	mul	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:56
+	mul a1, a1, s4
+ 234:	034585b3          	mul	a1,a1,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:57
+	add a0, a0, s2
+ 238:	01250533          	add	a0,a0,s2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:58
+	add a1, a1, s2
+ 23c:	012585b3          	add	a1,a1,s2
+
+00000240 <for_primeraEccNum>:
+for_primeraEccNum():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:63
+
+	// Primer for
+	for_primeraEccNum:
+
+		blt s1, t6, fin_for_primeraEccNum         // j si i>=N
+ 240:	03f4c063          	blt	s1,t6,260 <fin_for_primeraEccNum>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:65
+
+		slli t1, t6, 2                            // t1=i*4
+ 244:	002f9313          	slli	t1,t6,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:66
+		add t1, a0, t1                            // t1=@Ecc1N[i]
+ 248:	00650333          	add	t1,a0,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:67
+		lw t0, 0(t1)                              // Ecc1N[i]
+ 24c:	00032283          	lw	t0,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:68
+		mul t0, t0, t4                            // Multiplicamos por t4 (num del 2 numero)
+ 250:	03d282b3          	mul	t0,t0,t4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:69
+		sw t0, 0(t1)                              // Guardamos el valor en la ecc
+ 254:	00532023          	sw	t0,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:70
+		addi t6, t6, 1                            // i++
+ 258:	001f8f93          	addi	t6,t6,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:72
+
+		j for_primeraEccNum
+ 25c:	fe5ff06f          	j	240 <for_primeraEccNum>
+
+00000260 <fin_for_primeraEccNum>:
+fin_for_primeraEccNum():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:76
+
+	fin_for_primeraEccNum:
+
+	    li t6, 0                                  // i=0 (para el siguiente for)
+ 260:	00000f93          	li	t6,0
+
+00000264 <for_primeraEccDen>:
+for_primeraEccDen():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:81
+
+	// Segundo for
+	for_primeraEccDen:
+
+		blt s1, t6, fin_for_primeraEccDen         // j si i>=N
+ 264:	03f4c263          	blt	s1,t6,288 <fin_for_primeraEccDen>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:83
+
+		slli t1, t6, 2                            // t1=i*4
+ 268:	002f9313          	slli	t1,t6,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:84
+		add t1, a0, t1                            // t1=@Ecc1D[i]
+ 26c:	00650333          	add	t1,a0,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:85
+		add t1, t1, s4
+ 270:	01430333          	add	t1,t1,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:86
+		lw t0, 0(t1)                              // Ecc1D[i]
+ 274:	00032283          	lw	t0,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:87
+		mul t0, t0, t5                            // Multiplicamos por t5 (den del 2 numero)
+ 278:	03e282b3          	mul	t0,t0,t5
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:88
+		sw t0, 0(t1)                              // Guardamos el valor en la ecc
+ 27c:	00532023          	sw	t0,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:89
+		addi t6, t6, 1                            // i++
+ 280:	001f8f93          	addi	t6,t6,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:91
+
+		j for_primeraEccDen
+ 284:	fe1ff06f          	j	264 <for_primeraEccDen>
+
+00000288 <fin_for_primeraEccDen>:
+fin_for_primeraEccDen():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:95
+
+	fin_for_primeraEccDen:
+
+	    li t6, 0                                  // i=0 (para el siguiente for)
+ 288:	00000f93          	li	t6,0
+
+0000028c <for_segundaEccNum>:
+for_segundaEccNum():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:100
+
+	// Tercer for (ya de la 2 ecc)
+	for_segundaEccNum:
+
+		blt s1, t6, fin_for_segundaEccNum         // j si i>=N
+ 28c:	03f4c063          	blt	s1,t6,2ac <fin_for_segundaEccNum>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:102
+
+		slli t1, t6, 2                            // t1=i*4
+ 290:	002f9313          	slli	t1,t6,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:103
+		add t1, a1, t1                            // t1=@Ecc2N[i]
+ 294:	00658333          	add	t1,a1,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:104
+		lw t0, 0(t1)                              // Ecc1N[i]
+ 298:	00032283          	lw	t0,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:105
+		mul t0, t0, t2                            // Multiplicamos por t2 (num del 1 numero)
+ 29c:	027282b3          	mul	t0,t0,t2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:106
+		sw t0, 0(t1)                              // Guardamos el valor en la ecc
+ 2a0:	00532023          	sw	t0,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:107
+		addi t6, t6, 1                            // i++
+ 2a4:	001f8f93          	addi	t6,t6,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:109
+
+		j for_segundaEccNum
+ 2a8:	fe5ff06f          	j	28c <for_segundaEccNum>
+
+000002ac <fin_for_segundaEccNum>:
+fin_for_segundaEccNum():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:113
+
+	fin_for_segundaEccNum:
+
+	    li t6, 0                                  // i=0 (para el siguiente for)
+ 2ac:	00000f93          	li	t6,0
+
+000002b0 <for_segundaEccDen>:
+for_segundaEccDen():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:118
+
+	// Cuarto for
+	for_segundaEccDen:
+
+		blt s1, t6, fin_for_segundaEccDen         // j si i>=N
+ 2b0:	03f4c263          	blt	s1,t6,2d4 <fin_for_segundaEccDen>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:120
+
+		slli t1, t6, 2                            // t1=i*4
+ 2b4:	002f9313          	slli	t1,t6,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:121
+		add t1, a1, t1                            // t1=@Ecc2D[i]
+ 2b8:	00658333          	add	t1,a1,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:122
+		add t1, t1, s4
+ 2bc:	01430333          	add	t1,t1,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:123
+		lw t0, 0(t1)                              // Ecc1D[i]
+ 2c0:	00032283          	lw	t0,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:124
+		mul t0, t0, t3                            // Multiplicamos por t3 (den del 1 numero)
+ 2c4:	03c282b3          	mul	t0,t0,t3
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:125
+		sw t0, 0(t1)                              // Guardamos el valor en la ecc
+ 2c8:	00532023          	sw	t0,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:126
+		addi t6, t6, 1                            // i++
+ 2cc:	001f8f93          	addi	t6,t6,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:128
+
+		j for_segundaEccDen
+ 2d0:	fe1ff06f          	j	2b0 <for_segundaEccDen>
+
+000002d4 <fin_for_segundaEccDen>:
+fin_for_segundaEccDen():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:133
+
+	fin_for_segundaEccDen:
+
+	// Ahora simplificamos las ecuaciones
+	lw a0, 4(sp)            // Indice de la 1 Ecc
+ 2d4:	00412503          	lw	a0,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:135
+
+	call simplificaEcc
+ 2d8:	0dc000ef          	jal	ra,3b4 <simplificaEcc>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:137
+
+	lw a0, 0(sp)            // Indice de la 2 Ecc
+ 2dc:	00012503          	lw	a0,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:139
+
+	call simplificaEcc
+ 2e0:	0d4000ef          	jal	ra,3b4 <simplificaEcc>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:141
+
+	li a0, 1                // Devolvemos que SI se han multiplicado las ecc
+ 2e4:	00100513          	li	a0,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:143
+
+	lw ra, 8(sp)            // Desapilamos ra
+ 2e8:	00812083          	lw	ra,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:144
+	addi sp, sp, 12
+ 2ec:	00c10113          	addi	sp,sp,12
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:146
+
+	ret       // Ambas ecc ya multiplicadas
+ 2f0:	00008067          	ret
+
+000002f4 <fin_mcm>:
+fin_mcm():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:150
+
+	fin_mcm:
+
+	li a0, 0                // NO hemos multiplicado las ecc
+ 2f4:	00000513          	li	a0,0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:152
+
+	lw ra, 8(sp)            // Desapilamos ra
+ 2f8:	00812083          	lw	ra,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:153
+	addi sp, sp, 12
+ 2fc:	00c10113          	addi	sp,sp,12
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:155
+
+ret       // NO multiplicamos ambas ecc
+ 300:	00008067          	ret
+
+00000304 <restarEcc>:
+restarEcc():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:165
+
+restarEcc:
+
+	// Restamos a la ecuacion a1 la ecuacion a0
+
+	sub t0, a1, a0         // t0 guarda la diferencia de indices entre ambas ecc
+ 304:	40a582b3          	sub	t0,a1,a0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:166
+	addi t1, s1, 1
+ 308:	00148313          	addi	t1,s1,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:167
+	slli t1, t1, 2
+ 30c:	00231313          	slli	t1,t1,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:168
+	mul t0, t0, t1
+ 310:	026282b3          	mul	t0,t0,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:170
+
+	addi sp, sp, -8        // Apilamos ra y t0
+ 314:	ff810113          	addi	sp,sp,-8
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:171
+	sw t0, 4(sp)
+ 318:	00512223          	sw	t0,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:172
+	sw ra, 0(sp)
+ 31c:	00112023          	sw	ra,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:174
+
+	li a1, 0
+ 320:	00000593          	li	a1,0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:176
+
+	call calculaIndice     // Calculamos el indice del primer elemento de la ecuacion a0
+ 324:	484000ef          	jal	ra,7a8 <calculaIndice>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:178
+
+	mv t1, a0              // t1 guarda el indice y lo apilamos
+ 328:	00050313          	mv	t1,a0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:179
+	add t1, t1, s2
+ 32c:	01230333          	add	t1,t1,s2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:180
+	addi sp, sp, -4
+ 330:	ffc10113          	addi	sp,sp,-4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:181
+	sw t1, 0(sp)
+ 334:	00612023          	sw	t1,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:183
+
+	li t2, 0               // i=0
+ 338:	00000393          	li	t2,0
+
+0000033c <for_resta>:
+for_resta():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:187
+
+	for_resta:
+
+		blt s1, t2, fin_for_resta          // j si i>N
+ 33c:	0674c663          	blt	s1,t2,3a8 <fin_for_resta>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:189
+
+		lw t0, 8(sp)
+ 340:	00812283          	lw	t0,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:191
+
+		slli t3, t2, 2                     // i*4
+ 344:	00239e13          	slli	t3,t2,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:192
+		add t3, t3, t1                     // @a0[i]
+ 348:	006e0e33          	add	t3,t3,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:194
+
+		lw a0, 0(t3)                       // a0=a0[i]num
+ 34c:	000e2503          	lw	a0,0(t3)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:195
+		add t3, t3, s4
+ 350:	014e0e33          	add	t3,t3,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:196
+		lw a1, 0(t3)                       // a1=a0[i]den
+ 354:	000e2583          	lw	a1,0(t3)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:197
+		sub t3, t3, s4
+ 358:	414e0e33          	sub	t3,t3,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:198
+		add t3, t3, t0
+ 35c:	005e0e33          	add	t3,t3,t0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:199
+		lw a2, 0(t3)                       // a2=a1[i]num
+ 360:	000e2603          	lw	a2,0(t3)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:200
+		add t3, t3, s4
+ 364:	014e0e33          	add	t3,t3,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:201
+		lw a3, 0(t3)                       // a3=a1[i]den
+ 368:	000e2683          	lw	a3,0(t3)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:203
+
+		mul t5, a1, a3
+ 36c:	02d58f33          	mul	t5,a1,a3
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:204
+		sw t5, 0(t3)                       // a1[i]den*=a0[i]den
+ 370:	01ee2023          	sw	t5,0(t3)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:206
+
+		addi sp, sp, -4                    // Apilamos i
+ 374:	ffc10113          	addi	sp,sp,-4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:207
+		sw t2, 0(sp)
+ 378:	00712023          	sw	t2,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:209
+
+		call restaNumerador                // Calculamos el numerador
+ 37c:	3e4000ef          	jal	ra,760 <restaNumerador>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:211
+
+		lw t2, 0(sp)
+ 380:	00012383          	lw	t2,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:212
+		addi sp, sp, 4                     // Desapilamos i
+ 384:	00410113          	addi	sp,sp,4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:214
+
+		lw t1, 0(sp)
+ 388:	00012303          	lw	t1,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:215
+		slli t3, t2, 2                     // i*4
+ 38c:	00239e13          	slli	t3,t2,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:216
+		add t3, t3, t1                     // @a0[i]
+ 390:	006e0e33          	add	t3,t3,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:217
+		lw t0, 8(sp)
+ 394:	00812283          	lw	t0,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:218
+		add t3, t3, t0                     // @ai[i]
+ 398:	005e0e33          	add	t3,t3,t0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:220
+
+		sw a0, 0(t3)                       // a1[i]num guardado
+ 39c:	00ae2023          	sw	a0,0(t3)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:222
+
+		addi t2, t2, 1                     // i++
+ 3a0:	00138393          	addi	t2,t2,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:224
+
+		j for_resta
+ 3a4:	f99ff06f          	j	33c <for_resta>
+
+000003a8 <fin_for_resta>:
+fin_for_resta():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:228
+
+	fin_for_resta:
+
+	lw ra, 4(sp)
+ 3a8:	00412083          	lw	ra,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:229
+	addi sp, sp, 12                    // Solo nos interesa desapilar ra
+ 3ac:	00c10113          	addi	sp,sp,12
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:231
+
+ret
+ 3b0:	00008067          	ret
+
+000003b4 <simplificaEcc>:
+simplificaEcc():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:241
+
+simplificaEcc:
+
+	// a0 tiene el indice de la ecc
+
+	mul a0, a0, s4    // @EccNum
+ 3b4:	03450533          	mul	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:242
+	add a0, a0, s2
+ 3b8:	01250533          	add	a0,a0,s2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:244
+
+	li t4, 0          // j=0
+ 3bc:	00000e93          	li	t4,0
+
+000003c0 <for_recorreEcc>:
+for_recorreEcc():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:248
+
+	for_recorreEcc:
+
+		blt s1, t4, fin_for_recorreEcc // j si j>N
+ 3c0:	07d4ca63          	blt	s1,t4,434 <fin_for_recorreEcc>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:249
+		lw t5, 0(a0)                   // t5=EccNum[j]
+ 3c4:	00052f03          	lw	t5,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:250
+		add a0, a0, s4
+ 3c8:	01450533          	add	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:251
+		lw t6, 0(a0)                   // t6=EccDen[j]
+ 3cc:	00052f83          	lw	t6,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:252
+		sub a0, a0, s4
+ 3d0:	41450533          	sub	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:254
+
+		li t0, 0          // i (se sumara de 4 en cuatro)
+ 3d4:	00000293          	li	t0,0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:255
+		add t2, t0, s5    // t2=@Primos[i]
+ 3d8:	015283b3          	add	t2,t0,s5
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:256
+		lw t1, 0(t2)      // t1=Primos[0]
+ 3dc:	0003a303          	lw	t1,0(t2)
+
+000003e0 <while_simplificaEcc>:
+while_simplificaEcc():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:260
+
+		while_simplificaEcc:
+
+			beq t1, zero, fin_while_simplificaEcc        // j si Primos[i]=0 (fin de la lista)
+ 3e0:	04030463          	beqz	t1,428 <fin_while_simplificaEcc>
+
+000003e4 <if_simplificaEcc>:
+if_simplificaEcc():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:264
+
+			if_simplificaEcc:     // EccNum[j] % Primos[i] == 0 && EccDen[j] % Primos[i] == 0
+
+				rem t3, t5, t1
+ 3e4:	026f6e33          	rem	t3,t5,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:265
+				bne t3, zero, else_simplificaEcc
+ 3e8:	020e1663          	bnez	t3,414 <else_simplificaEcc>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:266
+				rem t3, t6, t1
+ 3ec:	026fee33          	rem	t3,t6,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:267
+				bne t3, zero, else_simplificaEcc
+ 3f0:	020e1263          	bnez	t3,414 <else_simplificaEcc>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:269
+
+				div t5, t5, t1   // Ecc[j]/=Primos[i]
+ 3f4:	026f4f33          	div	t5,t5,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:270
+				div t6, t6, t1
+ 3f8:	026fcfb3          	div	t6,t6,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:272
+
+				sw t5, 0(a0)                   // EccNum[j]=t5 (ya simplificado)
+ 3fc:	01e52023          	sw	t5,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:273
+				add a0, a0, s4
+ 400:	01450533          	add	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:274
+				sw t6, 0(a0)                   // EccDen[j]=t6 (ya simplificado)
+ 404:	01f52023          	sw	t6,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:275
+				sub a0, a0, s4
+ 408:	41450533          	sub	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:277
+
+				li t0, 0                       // Volvemos a Primos[0]
+ 40c:	00000293          	li	t0,0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:279
+
+				j fin_if_simplificaEcc
+ 410:	00c0006f          	j	41c <fin_if_simplificaEcc>
+
+00000414 <else_simplificaEcc>:
+else_simplificaEcc():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:283
+
+			else_simplificaEcc:   // Si no son divisibles por Primos[i]
+
+				addi t0, t0, 4                 // i++ (4 para tener el indice exacto)
+ 414:	00428293          	addi	t0,t0,4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:285
+
+				j fin_if_simplificaEcc
+ 418:	0040006f          	j	41c <fin_if_simplificaEcc>
+
+0000041c <fin_if_simplificaEcc>:
+fin_if_simplificaEcc():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:289
+
+			fin_if_simplificaEcc:
+
+				add t2, t0, s5    // t2=@Primos[i]
+ 41c:	015283b3          	add	t2,t0,s5
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:290
+				lw t1, 0(t2)      // t1=Primos[0]
+ 420:	0003a303          	lw	t1,0(t2)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:292
+
+				j while_simplificaEcc         // Volvemos a comprobar con el siguiente primo (o el primero si hemos podido simplificar)
+ 424:	fbdff06f          	j	3e0 <while_simplificaEcc>
+
+00000428 <fin_while_simplificaEcc>:
+fin_while_simplificaEcc():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:296
+
+		fin_while_simplificaEcc:
+
+			addi t4, t4, 1    // j++
+ 428:	001e8e93          	addi	t4,t4,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:297
+			addi a0, a0, 4    // Siguiente numero en la ecc.
+ 42c:	00450513          	addi	a0,a0,4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:299
+
+		j for_recorreEcc
+ 430:	f91ff06f          	j	3c0 <for_recorreEcc>
+
+00000434 <fin_for_recorreEcc>:
+fin_for_recorreEcc():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloInferior.asm:303
+
+	fin_for_recorreEcc:
+
+ret
+ 434:	00008067          	ret
+
+00000438 <cerosTrianguloSup>:
+cerosTrianguloSup():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:7
+
+// PASAMOS A LA FUNCION cerosTrianguloSup
+
+cerosTrianguloSup:
+    // Tenemos en a0 el indice de la ecc. (el falso, sin contar los vectores denominador)
+    mv t0, a0          // Posicion a0 de un vector
+ 438:	00050293          	mv	t0,a0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:8
+    mv t1, a0
+ 43c:	00050313          	mv	t1,a0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:9
+    slli t0, t0, 2
+ 440:	00229293          	slli	t0,t0,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:10
+    add t0, t0, s3     // @SolNum[a0]
+ 444:	013282b3          	add	t0,t0,s3
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:12
+
+    slli t1, t1, 1     // Indice de EccNum
+ 448:	00131313          	slli	t1,t1,0x1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:13
+    mul t1, t1, s4
+ 44c:	03430333          	mul	t1,t1,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:14
+    add t1, t1, s2     // @Ecc a0 Num
+ 450:	01230333          	add	t1,t1,s2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:15
+    add t1, t1, s4
+ 454:	01430333          	add	t1,t1,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:16
+    addi t1, t1, -4    // @Ecc a0 Num[Termino independiente]
+ 458:	ffc30313          	addi	t1,t1,-4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:18
+
+    mv t2, s1          // t2=N-1 (i)
+ 45c:	00048393          	mv	t2,s1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:19
+    addi t2, t2, -1
+ 460:	fff38393          	addi	t2,t2,-1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:21
+
+    addi sp, sp, -16   // Apilamos
+ 464:	ff010113          	addi	sp,sp,-16
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:22
+    sw a0, 0(sp)
+ 468:	00a12023          	sw	a0,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:23
+    sw t0, 4(sp)
+ 46c:	00512223          	sw	t0,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:24
+    sw t1, 8(sp)
+ 470:	00612423          	sw	t1,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:25
+    sw t2, 12(sp)
+ 474:	00712623          	sw	t2,12(sp)
+
+00000478 <while_triSup>:
+while_triSup():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:28
+
+    while_triSup:
+        lw a0, 0(sp)
+ 478:	00012503          	lw	a0,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:29
+        lw t2, 12(sp)
+ 47c:	00c12383          	lw	t2,12(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:30
+        beq t2, a0, fin_while_triSup   // j si i=a0
+ 480:	0aa38463          	beq	t2,a0,528 <fin_while_triSup>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:32
+
+        slli t0, t2, 2
+ 484:	00239293          	slli	t0,t2,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:33
+        slli t1, s1, 2
+ 488:	00249313          	slli	t1,s1,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:34
+        sub t0, t1, t0
+ 48c:	405302b3          	sub	t0,t1,t0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:35
+        lw t1, 8(sp)
+ 490:	00812303          	lw	t1,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:36
+        sub t0, t1, t0   // @EccNum[i]
+ 494:	405302b3          	sub	t0,t1,t0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:38
+
+        lw a2, 0(t0)
+ 498:	0002a603          	lw	a2,0(t0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:39
+        sw zero, 0(t0)
+ 49c:	0002a023          	sw	zero,0(t0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:40
+        add t0, t0, s4
+ 4a0:	014282b3          	add	t0,t0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:41
+        lw a3, 0(t0)     // Num y Den de Ecc[i]
+ 4a4:	0002a683          	lw	a3,0(t0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:42
+        li t4, 1
+ 4a8:	00100e93          	li	t4,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:43
+        sw t4, 0(t0)     // Aprovechamos y ponemos el num y den de Ecc[i] a 0 y 1 respectivamente
+ 4ac:	01d2a023          	sw	t4,0(t0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:45
+
+        slli t0, t2, 2
+ 4b0:	00239293          	slli	t0,t2,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:46
+        slli t1, s1, 2
+ 4b4:	00249313          	slli	t1,s1,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:47
+        sub t0, t1, t0
+ 4b8:	405302b3          	sub	t0,t1,t0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:48
+        add t1, s3, s4
+ 4bc:	01498333          	add	t1,s3,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:49
+        addi t1, t1, -4
+ 4c0:	ffc30313          	addi	t1,t1,-4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:50
+        sub t0, t1, t0   // @Sol[i]
+ 4c4:	405302b3          	sub	t0,t1,t0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:51
+        lw t4, 0(t0)
+ 4c8:	0002ae83          	lw	t4,0(t0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:52
+        mul a2, a2, t4
+ 4cc:	03d60633          	mul	a2,a2,t4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:53
+        add t0, t0, s4
+ 4d0:	014282b3          	add	t0,t0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:54
+        lw t4, 0(t0)
+ 4d4:	0002ae83          	lw	t4,0(t0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:55
+        mul a3, a3, t4   // Multiplicamos ese numero por la solucion correspondiente
+ 4d8:	03d686b3          	mul	a3,a3,t4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:57
+
+        lw t1, 8(sp)
+ 4dc:	00812303          	lw	t1,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:58
+        lw a0, 0(t1)
+ 4e0:	00032503          	lw	a0,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:59
+        add t1, t1, s4
+ 4e4:	01430333          	add	t1,t1,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:60
+        lw a1, 0(t1)     // Num y Den de Ecc[Ter. independiente]
+ 4e8:	00032583          	lw	a1,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:62
+
+        lw t1, 8(sp)
+ 4ec:	00812303          	lw	t1,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:63
+        add t1, t1, s4
+ 4f0:	01430333          	add	t1,t1,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:64
+        mul t0, a1, a3   // Ecc[i]den * Ecc[Ter. independiente]den
+ 4f4:	02d582b3          	mul	t0,a1,a3
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:65
+        sw t0, 0(t1)     // Guardamos el nuevo denominador del ter. independiente
+ 4f8:	00532023          	sw	t0,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:67
+
+        addi sp, sp, -4
+ 4fc:	ffc10113          	addi	sp,sp,-4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:68
+        sw ra, 0(sp)
+ 500:	00112023          	sw	ra,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:69
+        call restaNumerador
+ 504:	25c000ef          	jal	ra,760 <restaNumerador>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:70
+        lw ra, 0(sp)
+ 508:	00012083          	lw	ra,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:71
+        addi sp, sp, 4
+ 50c:	00410113          	addi	sp,sp,4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:73
+
+        lw t1, 8(sp)
+ 510:	00812303          	lw	t1,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:74
+        sw a0, 0(t1)     // Guardamos el nuevo numerador del ter. independiente
+ 514:	00a32023          	sw	a0,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:76
+
+        lw t2, 12(sp)
+ 518:	00c12383          	lw	t2,12(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:77
+        addi t2, t2, -1
+ 51c:	fff38393          	addi	t2,t2,-1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:78
+        sw t2, 12(sp)    // i--
+ 520:	00712623          	sw	t2,12(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:80
+
+        j while_triSup
+ 524:	f55ff06f          	j	478 <while_triSup>
+
+00000528 <fin_while_triSup>:
+fin_while_triSup():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:83
+
+    fin_while_triSup:
+        lw a0, 0(sp)
+ 528:	00012503          	lw	a0,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:85
+
+        addi sp, sp, -4
+ 52c:	ffc10113          	addi	sp,sp,-4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:86
+        sw ra, 0(sp)
+ 530:	00112023          	sw	ra,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:87
+        call guardaSol     // Guardamos la solucion
+ 534:	060000ef          	jal	ra,594 <guardaSol>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:88
+        lw a0, 4(sp)
+ 538:	00412503          	lw	a0,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:89
+        slli a0, a0, 2
+ 53c:	00251513          	slli	a0,a0,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:90
+        add a0, a0, s3     // Calculamos @Sol[a0]
+ 540:	01350533          	add	a0,a0,s3
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:91
+        call simplificaNum // Simplificamos la solucion
+ 544:	0b8000ef          	jal	ra,5fc <simplificaNum>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:92
+        lw ra, 0(sp)
+ 548:	00012083          	lw	ra,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:93
+        addi sp, sp, 4
+ 54c:	00410113          	addi	sp,sp,4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:95
+
+        lw a0, 0(sp)
+ 550:	00012503          	lw	a0,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:96
+        slli a0, a0, 1
+ 554:	00151513          	slli	a0,a0,0x1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:97
+        mul a0, a0, s4
+ 558:	03450533          	mul	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:98
+        add a0, a0, s2
+ 55c:	01250533          	add	a0,a0,s2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:99
+        add a0, a0, s4
+ 560:	01450533          	add	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:100
+        addi a0, a0, -4
+ 564:	ffc50513          	addi	a0,a0,-4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:102
+
+        addi sp, sp, -4
+ 568:	ffc10113          	addi	sp,sp,-4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:103
+        sw ra, 0(sp)
+ 56c:	00112023          	sw	ra,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:104
+        call simplificaNum // Simplificamos
+ 570:	08c000ef          	jal	ra,5fc <simplificaNum>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:105
+        lw ra, 0(sp)
+ 574:	00012083          	lw	ra,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:106
+        addi sp, sp, 4
+ 578:	00410113          	addi	sp,sp,4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:108
+
+        lw a0, 0(sp)
+ 57c:	00012503          	lw	a0,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:109
+        lw t0, 4(sp)
+ 580:	00412283          	lw	t0,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:110
+        lw t1, 8(sp)
+ 584:	00812303          	lw	t1,8(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:111
+        lw t2, 12(sp)
+ 588:	00c12383          	lw	t2,12(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:112
+        addi sp, sp, 16   // Desapilamos
+ 58c:	01010113          	addi	sp,sp,16
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:114
+
+        ret
+ 590:	00008067          	ret
+
+00000594 <guardaSol>:
+guardaSol():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:120
+
+// PASAMOS A LA FUNCION guardaSol
+
+guardaSol:
+    // Tenemos en a0 el indice de la Ecc. falsa
+    mv t0, a0
+ 594:	00050293          	mv	t0,a0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:121
+    slli t0, t0, 2   // Posicion del numero en ambos vectores
+ 598:	00229293          	slli	t0,t0,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:123
+
+    slli a0, a0, 1
+ 59c:	00151513          	slli	a0,a0,0x1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:124
+    mul a0, a0, s4
+ 5a0:	03450533          	mul	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:125
+    add a0, a0, s2   // @EccNum (a0)
+ 5a4:	01250533          	add	a0,a0,s2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:127
+
+    add t1, a0, t0   // @EccNum[a0]
+ 5a8:	00550333          	add	t1,a0,t0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:128
+    li t2, 1
+ 5ac:	00100393          	li	t2,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:130
+
+    lw t3, 0(t1)
+ 5b0:	00032e03          	lw	t3,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:131
+    sw t2, 0(t1)
+ 5b4:	00732023          	sw	t2,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:132
+    add t1, t1, s4
+ 5b8:	01430333          	add	t1,t1,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:133
+    lw t4, 0(t1)     // Cargamos el numero que nos dara una incognita
+ 5bc:	00032e83          	lw	t4,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:134
+    sw t2, 0(t1)     // Aprovehcamos y ponemos 1/1
+ 5c0:	00732023          	sw	t2,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:136
+
+    add t2, a0, s4
+ 5c4:	014503b3          	add	t2,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:137
+    addi t2, t2, -4  // @EccNum[Ter. independiente]
+ 5c8:	ffc38393          	addi	t2,t2,-4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:139
+
+    lw t5, 0(t2)
+ 5cc:	0003af03          	lw	t5,0(t2)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:140
+    mul t5, t5, t4
+ 5d0:	03df0f33          	mul	t5,t5,t4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:141
+    sw t5, 0(t2)
+ 5d4:	01e3a023          	sw	t5,0(t2)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:142
+    add t2, t2, s4
+ 5d8:	014383b3          	add	t2,t2,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:143
+    lw t6, 0(t2)
+ 5dc:	0003af83          	lw	t6,0(t2)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:144
+    mul t6, t6, t3
+ 5e0:	03cf8fb3          	mul	t6,t6,t3
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:145
+    sw t6, 0(t2)     // Cargamos Ecc(a0)[Ter. independiente], y lo dividimos por el numero
+ 5e4:	01f3a023          	sw	t6,0(t2)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:147
+
+    add t1, t0, s3   // @SolNum[a0]
+ 5e8:	01328333          	add	t1,t0,s3
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:148
+    sw t5, 0(t1)
+ 5ec:	01e32023          	sw	t5,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:149
+    add t1, t1, s4
+ 5f0:	01430333          	add	t1,t1,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:150
+    sw t6, 0(t1)     // Guardamos la nueva solucion
+ 5f4:	01f32023          	sw	t6,0(t1)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:152
+
+    ret
+ 5f8:	00008067          	ret
+
+000005fc <simplificaNum>:
+simplificaNum():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:158
+
+// PASAMOS A LA FUNCION simplificaNum
+
+simplificaNum:
+    // a0 tiene el @ del numero
+    mv t0, s5
+ 5fc:	000a8293          	mv	t0,s5
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:159
+    lw t1, 0(t0)   // Primer primo
+ 600:	0002a303          	lw	t1,0(t0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:161
+
+    lw t2, 0(a0)
+ 604:	00052383          	lw	t2,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:162
+    add a0, a0, s4
+ 608:	01450533          	add	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:163
+    lw t3, 0(a0)   // Numero a simplificar
+ 60c:	00052e03          	lw	t3,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:164
+    sub a0, a0, s4
+ 610:	41450533          	sub	a0,a0,s4
+
+00000614 <while_simplificaNum>:
+while_simplificaNum():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:167
+
+while_simplificaNum:
+    lw t1, 0(t0)
+ 614:	0002a303          	lw	t1,0(t0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:168
+    beq t1, zero, fin_while_simplificaNum // j si Primos[i]=0 (fin de la lista)
+ 618:	04030263          	beqz	t1,65c <fin_while_simplificaNum>
+
+0000061c <if_simplificaNum>:
+if_simplificaNum():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:171
+
+    if_simplificaNum:     // a0Num & Primos[i] == 0 && a0Den % Primos[i] == 0
+        rem t4, t2, t1
+ 61c:	0263eeb3          	rem	t4,t2,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:172
+        rem t5, t3, t1        // Restos al dividir el num y den por el primo
+ 620:	026e6f33          	rem	t5,t3,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:173
+        bne t4, zero, else_simplificaNum
+ 624:	020e9463          	bnez	t4,64c <else_simplificaNum>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:174
+        bne t5, zero, else_simplificaNum
+ 628:	020f1263          	bnez	t5,64c <else_simplificaNum>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:176
+
+        div t2, t2, t1        // Simplificamos el numero
+ 62c:	0263c3b3          	div	t2,t2,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:177
+        div t3, t3, t1
+ 630:	026e4e33          	div	t3,t3,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:179
+
+        sw t2, 0(a0)
+ 634:	00752023          	sw	t2,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:180
+        add a0, a0, s4
+ 638:	01450533          	add	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:181
+        sw t3, 0(a0)
+ 63c:	01c52023          	sw	t3,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:182
+        sub a0, a0, s4        // Guardamos el numero
+ 640:	41450533          	sub	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:184
+
+        mv t0, s5             // Volvemos a Primos[0]
+ 644:	000a8293          	mv	t0,s5
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:186
+
+        j fin_if_simplificaNum
+ 648:	00c0006f          	j	654 <fin_if_simplificaNum>
+
+0000064c <else_simplificaNum>:
+else_simplificaNum():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:189
+
+    else_simplificaNum:   // Si no son divisibles por Primos[i]
+        addi t0, t0, 4        // i++ (4 para tener el indice exacto)
+ 64c:	00428293          	addi	t0,t0,4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:190
+        j fin_if_simplificaNum
+ 650:	0040006f          	j	654 <fin_if_simplificaNum>
+
+00000654 <fin_if_simplificaNum>:
+fin_if_simplificaNum():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:193
+
+fin_if_simplificaNum:
+    lw t1, 0(t0)      // t1=Primos[i]
+ 654:	0002a303          	lw	t1,0(t0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:194
+    j while_simplificaNum          // Volvemos a comprobar con el siguiente primo (o el primero si hemos podido simplificar)
+ 658:	fbdff06f          	j	614 <while_simplificaNum>
+
+0000065c <fin_while_simplificaNum>:
+fin_while_simplificaNum():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:199
+
+fin_while_simplificaNum:
+
+    // Ya esta simplificado, solo falta ver el signo
+    bgt t2, zero, fin_simplificaNum
+ 65c:	02704263          	bgtz	t2,680 <fin_simplificaNum>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:200
+    bgt t3, zero, fin_simplificaNum
+ 660:	03c04063          	bgtz	t3,680 <fin_simplificaNum>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:202
+
+    li t0, -1
+ 664:	fff00293          	li	t0,-1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:203
+    mul t2, t2, t0
+ 668:	025383b3          	mul	t2,t2,t0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:204
+    mul t3, t3, t0
+ 66c:	025e0e33          	mul	t3,t3,t0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:206
+
+    sw t2, 0(a0)
+ 670:	00752023          	sw	t2,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:207
+    add a0, a0, s4
+ 674:	01450533          	add	a0,a0,s4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:208
+    sw t3, 0(a0)
+ 678:	01c52023          	sw	t3,0(a0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:209
+    sub a0, a0, s4        // Guardamos el numero ya simplificado
+ 67c:	41450533          	sub	a0,a0,s4
+
+00000680 <fin_simplificaNum>:
+fin_simplificaNum():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../TrianguloSuperior.asm:213
+
+fin_simplificaNum:
+
+    ret
+ 680:	00008067          	ret
+
+00000684 <main>:
+main():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:57
+Sd:     .space (N+1)*4
+
+.text
+main:
+
+li s1, N;                  // Valor de N
+ 684:	00300493          	li	s1,3
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:58
+la s2, E1n;                // @ De la 1 ecc
+ 688:	00010917          	auipc	s2,0x10
+ 68c:	97890913          	addi	s2,s2,-1672 # 10000 <E1n>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:59
+la s3, Sn;                 // @ Del vector solucion
+ 690:	00010997          	auipc	s3,0x10
+ 694:	a1098993          	addi	s3,s3,-1520 # 100a0 <Sn>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:60
+li s4, 1
+ 698:	00100a13          	li	s4,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:61
+add s4, s4, s1
+ 69c:	009a0a33          	add	s4,s4,s1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:62
+slli s4, s4, 2             // s4=4*(N+1) se usara despues frecuentemente
+ 6a0:	002a1a13          	slli	s4,s4,0x2
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:63
+la s5, Primos              // @ Del vector Primos
+ 6a4:	00010a97          	auipc	s5,0x10
+ 6a8:	9bca8a93          	addi	s5,s5,-1604 # 10060 <Primos>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:64
+la s6, AuxCols             // @ Del vector auxiliar de columnas
+ 6ac:	00010b17          	auipc	s6,0x10
+ 6b0:	9d4b0b13          	addi	s6,s6,-1580 # 10080 <AuxCols>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:65
+la s7, IntercambiadorMoncloa
+ 6b4:	00010b97          	auipc	s7,0x10
+ 6b8:	9d8b8b93          	addi	s7,s7,-1576 # 1008c <IntercambiadorMoncloa>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:67
+
+call revisaEccCorrectas
+ 6bc:	945ff0ef          	jal	ra,0 <revisaEccCorrectas>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:69
+
+call ajustaCols
+ 6c0:	a21ff0ef          	jal	ra,e0 <ajustaCols>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:71
+
+li t0, 0                   // i=0
+ 6c4:	00000293          	li	t0,0
+
+000006c8 <for_trianguloInf>:
+for_trianguloInf():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:75
+
+for_trianguloInf:
+
+addi t1, s1, -1                     // j=N-1
+ 6c8:	fff48313          	addi	t1,s1,-1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:76
+bge t0, t1, fin_for_trianguloInf    // jump si i>=N-1
+ 6cc:	0462de63          	bge	t0,t1,728 <fin_for_trianguloInf>
+
+000006d0 <for_trianguloInfCol>:
+for_trianguloInfCol():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:80
+
+for_trianguloInfCol:
+
+ble t1, t0, fin_for_trianguloInfCol    // jump si j<=i
+ 6d0:	0462d863          	bge	t0,t1,720 <fin_for_trianguloInfCol>
+
+000006d4 <simplificacion>:
+simplificacion():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:84
+
+simplificacion:
+
+mv a0, t0              // a0 y a1 cogen los indices de las ecuaciones a reducir
+ 6d4:	00028513          	mv	a0,t0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:85
+mv a1, t1
+ 6d8:	00030593          	mv	a1,t1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:87
+
+slli a0, a0, 1         // Multiplicamos por 2 para acceder a las ecc. reales
+ 6dc:	00151513          	slli	a0,a0,0x1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:88
+slli a1, a1, 1
+ 6e0:	00159593          	slli	a1,a1,0x1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:90
+
+addi sp, sp, -8        // Apilamos t0 y t1
+ 6e4:	ff810113          	addi	sp,sp,-8
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:91
+sw t0, 4(sp)
+ 6e8:	00512223          	sw	t0,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:92
+sw t1, 0(sp)
+ 6ec:	00612023          	sw	t1,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:94
+
+call mcm               // Hacemos el mcm de las ecc. i, j
+ 6f0:	ac9ff0ef          	jal	ra,1b8 <mcm>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:96
+
+beq a0, zero, fin_simplificacion   // j si habia un 0
+ 6f4:	00050c63          	beqz	a0,70c <fin_simplificacion>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:98
+
+lw a0, 4(sp)
+ 6f8:	00412503          	lw	a0,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:99
+lw a1, 0(sp)
+ 6fc:	00012583          	lw	a1,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:101
+
+slli a0, a0, 1         // Multiplicamos por 2 para acceder a las ecc. reales
+ 700:	00151513          	slli	a0,a0,0x1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:102
+slli a1, a1, 1
+ 704:	00159593          	slli	a1,a1,0x1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:104
+
+call restarEcc         // Restamos la ecc. i a la ecc. j
+ 708:	bfdff0ef          	jal	ra,304 <restarEcc>
+
+0000070c <fin_simplificacion>:
+fin_simplificacion():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:108
+
+fin_simplificacion:
+
+lw t0, 4(sp)
+ 70c:	00412283          	lw	t0,4(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:109
+lw t1, 0(sp)
+ 710:	00012303          	lw	t1,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:110
+addi sp, sp, 8         // Desapilamos t0 y t1
+ 714:	00810113          	addi	sp,sp,8
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:112
+
+addi t1, t1, -1        // j--
+ 718:	fff30313          	addi	t1,t1,-1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:114
+
+j for_trianguloInfCol
+ 71c:	fb5ff06f          	j	6d0 <for_trianguloInfCol>
+
+00000720 <fin_for_trianguloInfCol>:
+fin_for_trianguloInfCol():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:118
+
+fin_for_trianguloInfCol:
+
+addi t0, t0, 1         // i++
+ 720:	00128293          	addi	t0,t0,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:119
+j for_trianguloInf
+ 724:	fa5ff06f          	j	6c8 <for_trianguloInf>
+
+00000728 <fin_for_trianguloInf>:
+fin_for_trianguloInf():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:123
+
+fin_for_trianguloInf:
+
+mv t0, s1
+ 728:	00048293          	mv	t0,s1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:124
+addi t0, t0, -1        // i=N-1
+ 72c:	fff28293          	addi	t0,t0,-1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:126
+
+addi sp, sp, -4        // Apilamos i
+ 730:	ffc10113          	addi	sp,sp,-4
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:127
+sw t0, 0(sp)
+ 734:	00512023          	sw	t0,0(sp)
+
+00000738 <for_guardamosSoluciones>:
+for_guardamosSoluciones():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:131
+
+for_guardamosSoluciones:
+
+lw t0, 0(sp)             // Cargamos i
+ 738:	00012283          	lw	t0,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:132
+blt t0, zero, fin_for_guardamosSoluciones   // j si i<0
+ 73c:	0002ce63          	bltz	t0,758 <fin_for_guardamosSoluciones>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:134
+
+mv a0, t0
+ 740:	00028513          	mv	a0,t0
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:135
+call cerosTrianguloSup   // Hacemos 0 de la ecuacion i, y guardamos su solucion correspondiente
+ 744:	cf5ff0ef          	jal	ra,438 <cerosTrianguloSup>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:137
+
+lw t0, 0(sp)
+ 748:	00012283          	lw	t0,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:138
+addi t0, t0, -1          // i--
+ 74c:	fff28293          	addi	t0,t0,-1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:139
+sw t0, 0(sp)
+ 750:	00512023          	sw	t0,0(sp)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:141
+
+j for_guardamosSoluciones
+ 754:	fe5ff06f          	j	738 <for_guardamosSoluciones>
+
+00000758 <fin_for_guardamosSoluciones>:
+fin_for_guardamosSoluciones():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:145
+
+fin_for_guardamosSoluciones:
+
+addi sp, sp, 4
+ 758:	00410113          	addi	sp,sp,4
+
+0000075c <fin>:
+fin():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_asm.asm:149
+
+fin:
+
+j fin
+ 75c:	0000006f          	j	75c <fin>
+
+Disassembly of section .text.restaNumerador:
+
+00000760 <restaNumerador>:
+restaNumerador():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:17
+**
+**-------------------------------------------------------------------*/
+
+#define N 3
+
+int restaNumerador (int Anum, int Bnum, int Aden, int Bden){
+ 760:	fe010113          	addi	sp,sp,-32
+ 764:	00812e23          	sw	s0,28(sp)
+ 768:	02010413          	addi	s0,sp,32
+ 76c:	fea42623          	sw	a0,-20(s0)
+ 770:	feb42423          	sw	a1,-24(s0)
+ 774:	fec42223          	sw	a2,-28(s0)
+ 778:	fed42023          	sw	a3,-32(s0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:18
+	return (Anum*Bden) - (Aden*Bnum);
+ 77c:	fec42703          	lw	a4,-20(s0)
+ 780:	fe042783          	lw	a5,-32(s0)
+ 784:	02f70733          	mul	a4,a4,a5
+ 788:	fe442683          	lw	a3,-28(s0)
+ 78c:	fe842783          	lw	a5,-24(s0)
+ 790:	02f687b3          	mul	a5,a3,a5
+ 794:	40f707b3          	sub	a5,a4,a5
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:19
+}
+ 798:	00078513          	mv	a0,a5
+ 79c:	01c12403          	lw	s0,28(sp)
+ 7a0:	02010113          	addi	sp,sp,32
+ 7a4:	00008067          	ret
+
+Disassembly of section .text.calculaIndice:
+
+000007a8 <calculaIndice>:
+calculaIndice():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:21
+
+int calculaIndice (int ecc, int i){
+ 7a8:	fe010113          	addi	sp,sp,-32
+ 7ac:	00812e23          	sw	s0,28(sp)
+ 7b0:	02010413          	addi	s0,sp,32
+ 7b4:	fea42623          	sw	a0,-20(s0)
+ 7b8:	feb42423          	sw	a1,-24(s0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:23
+
+	ecc *= 4*(N+1);
+ 7bc:	fec42783          	lw	a5,-20(s0)
+ 7c0:	00479793          	slli	a5,a5,0x4
+ 7c4:	fef42623          	sw	a5,-20(s0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:24
+	ecc += i*4;
+ 7c8:	fe842783          	lw	a5,-24(s0)
+ 7cc:	00279793          	slli	a5,a5,0x2
+ 7d0:	fec42703          	lw	a4,-20(s0)
+ 7d4:	00f707b3          	add	a5,a4,a5
+ 7d8:	fef42623          	sw	a5,-20(s0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:26
+
+	return ecc;
+ 7dc:	fec42783          	lw	a5,-20(s0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:28
+
+}
+ 7e0:	00078513          	mv	a0,a5
+ 7e4:	01c12403          	lw	s0,28(sp)
+ 7e8:	02010113          	addi	sp,sp,32
+ 7ec:	00008067          	ret
+
+Disassembly of section .text.enArray:
+
+000007f0 <enArray>:
+enArray():
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:30
+
+int enArray (int *V, int num, int taMax){
+ 7f0:	fd010113          	addi	sp,sp,-48
+ 7f4:	02812623          	sw	s0,44(sp)
+ 7f8:	03010413          	addi	s0,sp,48
+ 7fc:	fca42e23          	sw	a0,-36(s0)
+ 800:	fcb42c23          	sw	a1,-40(s0)
+ 804:	fcc42a23          	sw	a2,-44(s0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:32
+
+	for (int i = 0; i < taMax; i++){
+ 808:	fe042623          	sw	zero,-20(s0)
+ 80c:	0340006f          	j	840 <enArray+0x50>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:33
+		if (*V == num){
+ 810:	fdc42783          	lw	a5,-36(s0)
+ 814:	0007a783          	lw	a5,0(a5)
+ 818:	fd842703          	lw	a4,-40(s0)
+ 81c:	00f71663          	bne	a4,a5,828 <enArray+0x38>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:34
+			return 0;
+ 820:	00000793          	li	a5,0
+ 824:	02c0006f          	j	850 <enArray+0x60>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:36 (discriminator 2)
+		}
+		V++;
+ 828:	fdc42783          	lw	a5,-36(s0)
+ 82c:	00478793          	addi	a5,a5,4
+ 830:	fcf42e23          	sw	a5,-36(s0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:32 (discriminator 2)
+	for (int i = 0; i < taMax; i++){
+ 834:	fec42783          	lw	a5,-20(s0)
+ 838:	00178793          	addi	a5,a5,1
+ 83c:	fef42623          	sw	a5,-20(s0)
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:32 (discriminator 1)
+ 840:	fec42703          	lw	a4,-20(s0)
+ 844:	fd442783          	lw	a5,-44(s0)
+ 848:	fcf744e3          	blt	a4,a5,810 <enArray+0x20>
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:39
+	}
+
+	return 1;
+ 84c:	00100793          	li	a5,1
+E:\FC2practicasWS\FC2practicasWS\pr5\Debug/../fun_c.c:41
+
+}
+ 850:	00078513          	mv	a0,a5
+ 854:	02c12403          	lw	s0,44(sp)
+ 858:	03010113          	addi	sp,sp,48
+ 85c:	00008067          	ret

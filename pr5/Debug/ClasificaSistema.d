@@ -1,0 +1,1 @@
+ClasificaSistema.o: ../ClasificaSistema.asm

@@ -1,0 +1,321 @@
+
+pr4.elf:     file format elf32-littleriscv
+pr4.elf
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00000160
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x000001c4 memsz 0x000001c4 flags r-x
+    LOAD off    0x00002000 vaddr 0x00010000 paddr 0x00010000 align 2**12
+         filesz 0x00000028 memsz 0x00000029 flags rw-
+
+Sections:
+Idx Name              Size      VMA       LMA       File off  Algn  Flags
+  0 .text             00000084  00000000  00000000  00001000  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .text.mul         00000084  00000084  00000084  00001084  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .text.i_sqrt      00000058  00000108  00000108  00001108  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .text.main        00000064  00000160  00000160  00001160  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  4 .data.U           00000014  00010000  00010000  00002000  2**2  CONTENTS, ALLOC, LOAD, DATA
+  5 .data.V           00000014  00010014  00010014  00002014  2**2  CONTENTS, ALLOC, LOAD, DATA
+  6 .sbss.mayor_u     00000001  00010028  00010028  00002028  2**0  ALLOC
+  7 .riscv.attributes 00000021  00000000  00000000  00002028  2**0  CONTENTS, READONLY
+  8 .comment          00000012  00000000  00000000  00002049  2**0  CONTENTS, READONLY
+  9 .debug_line       0000023a  00000000  00000000  0000205b  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .debug_info       00000171  00000000  00000000  00002295  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 11 .debug_abbrev     00000100  00000000  00000000  00002406  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 12 .debug_aranges    00000050  00000000  00000000  00002508  2**3  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 13 .debug_str        00002423  00000000  00000000  00002558  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 14 .debug_ranges     00000020  00000000  00000000  0000497b  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 15 .debug_macro      000006ff  00000000  00000000  0000499b  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 16 .debug_frame      00000078  00000000  00000000  0000509c  2**2  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+00000000 l    d  .text	00000000 .text
+00000084 l    d  .text.mul	00000000 .text.mul
+00000108 l    d  .text.i_sqrt	00000000 .text.i_sqrt
+00000160 l    d  .text.main	00000000 .text.main
+00010000 l    d  .data.U	00000000 .data.U
+00010014 l    d  .data.V	00000000 .data.V
+00010028 l    d  .sbss.mayor_u	00000000 .sbss.mayor_u
+00000000 l    d  .riscv.attributes	00000000 .riscv.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./fun_asm.o
+00000008 l       .text	00000000 for
+00000060 l       .text	00000000 fin_for
+00000000 l    df *ABS*	00000000 pr4.c
+00000000 g       .text	00000000 eucl_dist
+00000108 g     F .text.i_sqrt	00000058 i_sqrt
+00010014 g     O .data.V	00000014 V
+00000084 g     F .text.mul	00000084 mul
+00000160 g     F .text.main	00000064 main
+00010028 g     O .sbss.mayor_u	00000001 mayor_u
+00010000 g     O .data.U	00000014 U
+00020000 g       *ABS*	00000000 _stack
+0000007c g       .text	00000000 guardar
+
+
+
+Disassembly of section .text:
+
+00000000 <eucl_dist>:
+eucl_dist():
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:33
+eucl_dist:
+    //recibo dirección de W en a0, y tamaño N en a1
+    //realizo los cálculos pertinentes
+    //devuelvo el resultado en a0
+
+    li t0, 0                      // acc=0
+   0:	00000293          	li	t0,0
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:34
+    li t1, 0                      // i=0
+   4:	00000313          	li	t1,0
+
+00000008 <for>:
+for():
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:38
+
+    for:
+
+    bge t1, a1, fin_for           // j si i>=N
+   8:	04b35c63          	bge	t1,a1,60 <fin_for>
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:39
+    lw t2, 0(a0)                  // W[i]
+   c:	00052383          	lw	t2,0(a0)
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:41
+
+    addi sp, sp, -20              // Apilamos
+  10:	fec10113          	addi	sp,sp,-20
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:42
+    sw ra, 16(sp)                 // ra
+  14:	00112823          	sw	ra,16(sp)
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:43
+    sw t0, 12(sp)                 // acc
+  18:	00512623          	sw	t0,12(sp)
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:44
+    sw t1, 8(sp)                  // i
+  1c:	00612423          	sw	t1,8(sp)
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:45
+    sw a0, 4(sp)                  // @W[i]
+  20:	00a12223          	sw	a0,4(sp)
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:46
+    sw a1, 0(sp)                  // N
+  24:	00b12023          	sw	a1,0(sp)
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:48
+
+    mv a0, t2                     // Pasamos W[i] como parametro a mul
+  28:	00038513          	mv	a0,t2
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:49
+    mv a1, t2
+  2c:	00038593          	mv	a1,t2
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:50
+    call mul
+  30:	054000ef          	jal	ra,84 <mul>
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:51
+    mv t2, a0                     // t2=res
+  34:	00050393          	mv	t2,a0
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:53
+
+    lw ra, 16(sp)                 // ra
+  38:	01012083          	lw	ra,16(sp)
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:54
+    lw t0, 12(sp)                 // acc
+  3c:	00c12283          	lw	t0,12(sp)
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:55
+    lw t1, 8(sp)                  // i
+  40:	00812303          	lw	t1,8(sp)
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:56
+    lw a0, 4(sp)                  // @W[i]
+  44:	00412503          	lw	a0,4(sp)
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:57
+    lw a1, 0(sp)                  // N
+  48:	00012583          	lw	a1,0(sp)
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:58
+    addi sp, sp, 20               // Desapilamos
+  4c:	01410113          	addi	sp,sp,20
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:60
+
+    add t0, t0, t2                // acc+=res
+  50:	007282b3          	add	t0,t0,t2
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:61
+    addi a0, a0, 4                // @W[i]->@W[i+1]
+  54:	00450513          	addi	a0,a0,4
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:62
+    addi t1, t1, 1                // ++i
+  58:	00130313          	addi	t1,t1,1
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:64
+
+    j for
+  5c:	fadff06f          	j	8 <for>
+
+00000060 <fin_for>:
+fin_for():
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:68
+
+    fin_for:
+
+    mv a0, t0                     // a0=acc
+  60:	00028513          	mv	a0,t0
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:70
+
+    addi sp, sp, -4               // Apilamos ra
+  64:	ffc10113          	addi	sp,sp,-4
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:71
+    sw ra, 0(sp)
+  68:	00112023          	sw	ra,0(sp)
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:72
+    call i_sqrt                   // a0= i_sqrt ( acc )
+  6c:	09c000ef          	jal	ra,108 <i_sqrt>
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:73
+    lw ra, 0(sp)
+  70:	00012083          	lw	ra,0(sp)
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:74
+    addi sp, sp, 4                // Desapilamos
+  74:	00410113          	addi	sp,sp,4
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:76
+
+    ret
+  78:	00008067          	ret
+
+0000007c <guardar>:
+guardar():
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:84
+//int guardar(char valor, char * ubicacion);
+guardar:
+    //recibo el valor en a0, y la dirección destino en a1
+    //asegurarse que sólo se guarda UN BYTE!!
+
+    sb a0, 0(a1)                  // @a1 <- a0
+  7c:	00a58023          	sb	a0,0(a1)
+D:\FC2practicasWS\FC2practicasWS\pr4\Debug/../fun_asm.asm:85
+    ret
+  80:	00008067          	ret
+
+Disassembly of section .text.mul:
+
+00000084 <mul>:
+mul():
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:28
+  84:	fd010113          	addi	sp,sp,-48
+  88:	02812623          	sw	s0,44(sp)
+  8c:	03010413          	addi	s0,sp,48
+  90:	fca42e23          	sw	a0,-36(s0)
+  94:	fcb42c23          	sw	a1,-40(s0)
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:29
+  98:	fe042623          	sw	zero,-20(s0)
+  9c:	fe042423          	sw	zero,-24(s0)
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:30
+  a0:	fdc42783          	lw	a5,-36(s0)
+  a4:	0207d663          	bgez	a5,d0 <mul+0x4c>
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:31
+  a8:	00100793          	li	a5,1
+  ac:	fef42423          	sw	a5,-24(s0)
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:32
+  b0:	fdc42783          	lw	a5,-36(s0)
+  b4:	40f007b3          	neg	a5,a5
+  b8:	fcf42e23          	sw	a5,-36(s0)
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:34
+  bc:	0140006f          	j	d0 <mul+0x4c>
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:34 (discriminator 2)
+  c0:	fec42703          	lw	a4,-20(s0)
+  c4:	fd842783          	lw	a5,-40(s0)
+  c8:	00f707b3          	add	a5,a4,a5
+  cc:	fef42623          	sw	a5,-20(s0)
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:34 (discriminator 1)
+  d0:	fdc42783          	lw	a5,-36(s0)
+  d4:	fff78713          	addi	a4,a5,-1
+  d8:	fce42e23          	sw	a4,-36(s0)
+  dc:	fe0792e3          	bnez	a5,c0 <mul+0x3c>
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:35
+  e0:	fe842783          	lw	a5,-24(s0)
+  e4:	00078863          	beqz	a5,f4 <mul+0x70>
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:36
+  e8:	fec42783          	lw	a5,-20(s0)
+  ec:	40f007b3          	neg	a5,a5
+  f0:	0080006f          	j	f8 <mul+0x74>
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:38
+  f4:	fec42783          	lw	a5,-20(s0)
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:39
+  f8:	00078513          	mv	a0,a5
+  fc:	02c12403          	lw	s0,44(sp)
+ 100:	03010113          	addi	sp,sp,48
+ 104:	00008067          	ret
+
+Disassembly of section .text.i_sqrt:
+
+00000108 <i_sqrt>:
+i_sqrt():
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:44
+ 108:	fd010113          	addi	sp,sp,-48
+ 10c:	02112623          	sw	ra,44(sp)
+ 110:	02812423          	sw	s0,40(sp)
+ 114:	03010413          	addi	s0,sp,48
+ 118:	fca42e23          	sw	a0,-36(s0)
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:45
+ 11c:	fe042623          	sw	zero,-20(s0)
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:46
+ 120:	0100006f          	j	130 <i_sqrt+0x28>
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:47
+ 124:	fec42783          	lw	a5,-20(s0)
+ 128:	00178793          	addi	a5,a5,1
+ 12c:	fef42623          	sw	a5,-20(s0)
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:46
+ 130:	fec42583          	lw	a1,-20(s0)
+ 134:	fec42503          	lw	a0,-20(s0)
+ 138:	f4dff0ef          	jal	ra,84 <mul>
+ 13c:	00050713          	mv	a4,a0
+ 140:	fdc42783          	lw	a5,-36(s0)
+ 144:	fef740e3          	blt	a4,a5,124 <i_sqrt+0x1c>
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:49
+ 148:	fec42783          	lw	a5,-20(s0)
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:50
+ 14c:	00078513          	mv	a0,a5
+ 150:	02c12083          	lw	ra,44(sp)
+ 154:	02812403          	lw	s0,40(sp)
+ 158:	03010113          	addi	sp,sp,48
+ 15c:	00008067          	ret
+
+Disassembly of section .text.main:
+
+00000160 <main>:
+main():
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:55
+ 160:	fe010113          	addi	sp,sp,-32
+ 164:	00112e23          	sw	ra,28(sp)
+ 168:	00812c23          	sw	s0,24(sp)
+ 16c:	02010413          	addi	s0,sp,32
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:57
+ 170:	00500593          	li	a1,5
+ 174:	000107b7          	lui	a5,0x10
+ 178:	00078513          	mv	a0,a5
+ 17c:	e85ff0ef          	jal	ra,0 <eucl_dist>
+ 180:	fea42623          	sw	a0,-20(s0)
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:58
+ 184:	00500593          	li	a1,5
+ 188:	000107b7          	lui	a5,0x10
+ 18c:	01478513          	addi	a0,a5,20 # 10014 <V>
+ 190:	e71ff0ef          	jal	ra,0 <eucl_dist>
+ 194:	fea42423          	sw	a0,-24(s0)
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:60
+ 198:	fec42703          	lw	a4,-20(s0)
+ 19c:	fe842783          	lw	a5,-24(s0)
+ 1a0:	00e7a7b3          	slt	a5,a5,a4
+ 1a4:	0ff7f793          	andi	a5,a5,255
+ 1a8:	fef403a3          	sb	a5,-25(s0)
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:61
+ 1ac:	fe740703          	lb	a4,-25(s0)
+ 1b0:	000107b7          	lui	a5,0x10
+ 1b4:	02878593          	addi	a1,a5,40 # 10028 <mayor_u>
+ 1b8:	00070513          	mv	a0,a4
+ 1bc:	ec1ff0ef          	jal	ra,7c <guardar>
+E:\FC2practicasWS\FC2practicasWS\pr4\Debug/../pr4.c:63 (discriminator 1)
+ 1c0:	0000006f          	j	1c0 <main+0x60>

@@ -1,0 +1,1 @@
+IntercambiarEcc.o: ../IntercambiarEcc.asm

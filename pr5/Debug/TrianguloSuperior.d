@@ -1,0 +1,1 @@
+TrianguloSuperior.o: ../TrianguloSuperior.asm

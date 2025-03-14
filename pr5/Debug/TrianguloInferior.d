@@ -1,0 +1,1 @@
+TrianguloInferior.o: ../TrianguloInferior.asm
